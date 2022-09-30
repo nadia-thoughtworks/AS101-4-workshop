@@ -25,7 +25,7 @@ jobs:
     - name: hide credentials from the output
       run: |
         echo "::add-mask::$POSTGRES_USER"
-        echo POSTGRES_USER
+        echo $POSTGRES_USER
         echo "::add-mask::$POSTGRES_PASSWORD"
         echo "::add-mask::$POSTGRES_DB"
     - uses: actions/checkout@v2
